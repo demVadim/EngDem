@@ -2,5 +2,5 @@
 
 namespace EngDem {
 
-    void sayHello();
+    int checkGLWF();
 }

@@ -5,7 +5,7 @@ int main()
 {
     std::cout<<"HELLO FROM ENGDEM"<<std::endl;
 
-    EngDem::sayHello();
+    EngDem::checkGLWF();
 
     std::cin.get();
 }
