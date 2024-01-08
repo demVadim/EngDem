@@ -3,7 +3,7 @@
 
 int main()
 {
-    std::cout<<"HELLO FROM ENGDEM"<<std::endl;
+    std::cout<<"HELLO ENGDEM"<<std::endl;
 
     EngDem::checkGLWF();
 
