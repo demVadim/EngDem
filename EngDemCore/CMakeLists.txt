@@ -2,9 +2,18 @@ cmake_minimum_required(VERSION 3.28)
 
 set(ENGINE_PROJECT_NAME EngDemCore)
 
+set(ENGINE_PUBLIC_INCLUDES 
+    includes/EngDemCore/Application.hpp
+)
+
+set(ENGINE_PRIVATE_SOURCES 
+    src/EngDemCore/Application.cpp
+)
+
+
 add_library(${ENGINE_PROJECT_NAME} STATIC
-    src/EngDemCore/Utils/test.cpp
-    includes/EngDemCore/Utils/test.hpp
+    ${ENGINE_PUBLIC_INCLUDES}
+    ${ENGINE_PRIVATE_SOURCES}
 )
 
 target_include_directories(${ENGINE_PROJECT_NAME} PUBLIC includes)
